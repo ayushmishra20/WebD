@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<style>
+    body {
+        background-color: #250505;
+        color: #ffffff;
+    }
+</style>
+<body>
+    <img src="https://images.pexels.com/photos/19227275/pexels-photo-19227275.jpeg" width="200px" alt="Image of a cat" title="pexals image">
+
+<picture>
+    <source media="(min-width= 720px)" srcset="https://images.pexels.com/photos/19227275/pexels-photo-19227275.jpeg" type="image/jpeg" width="200px">
+    <source media="(min-width= 1080)" srcset="https://images.pexels.com/photos/19227275/pexels-photo-19227275.jpeg" type="image/jpeg" width="200px">
+    <img src="https://images.pexels.com/photos/19227275/pexels-photo-19227275.jpeg" width="200px" alt="Image of a cat" title="pexals image">
+</picture>
+</body>
+</html>
