@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 9px;
+        }
+        nav {
+            background-color: #333;
+            border: #111;
+            border-radius: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 5px;
+            padding: 2px;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        .welcome {
+            padding: 20px;
+            background-color: rgba(207, 41, 138, 0.341);
+            border-radius: 20px;
+        }
+        h2{
+            padding: 5px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        #search {
+            /* padding: 6%; */
+            
+            padding-top: 6px;
+            margin-top: 8px;
+            margin-left: 110%;
+            border: none;
+            border-radius: 20px;
+            text-align: left;
+        }
+        nav li input{
+            padding: 6px;
+            margin-top: 8px;
+            margin-left: 110%;
+            border: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="mailto:example@example.com">Contact</a></li>
+            <li><input id="search" type="text" placeholder="Search..."></li>
+        </ul>
+    </nav>
+    <div class="welcome" id="elment">
+        <h2>
+            <Welcome>Welcome to the The store</Welcome>
+        </h2>
+    </div>
+    <div class="images">
+        <img id="firstimg" src="https://5.imimg.com/data5/SELLER/Default/2025/5/511834177/GW/UR/CD/10736019/premium-quality-women-s-handbag-500x500.jpg" alt=" Handbag" width="200" height="200">
+
+        <img id="secondimg" src="https://5.imimg.com/data5/SELLER/Default/2026/1/579145352/LC/QA/ST/14670498/designer-handbag-500x500.jpeg" alt="Designer Handbag" width="200" height="200">
+    </div>
+
+    
+</body>
+</html>
