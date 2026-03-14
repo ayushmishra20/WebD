@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Protest+Revolution&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             font-family: 'Ubuntu', sans-serif;
         }
@@ -26,12 +29,31 @@
             border-radius: 10px;
             background-color: rgba(223, 223, 165, 0.7);
         }
+        #fruits{
+            width: 48%;
+            float: left;
+        }
+        #computer{
+            width: 48%;
+            float: right;
+        }
+        #vegetable{
+            /* width: 50%; */
+            /* float: left; */
+            clear: right;
+            clear: both;
+        }
+        h2, h3{
+            color: rgb(188, 127, 47);
+            text-align: center;
+        }
         
 
     </style>
 </head>
 <body>
    <div class="container">
+    <h2>Welcome to My store</h2>
     <div id="fruits" class="item">
         <h3 ><i><u>Fruits</u>
         </i></h3>
@@ -45,6 +67,11 @@
         <h3><i><u>Vegetable</u></i>
         </h3>
         <p id="vegetablepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam nostrum expedita provident doloremque laborum quaerat ratione aliquam libero suscipit molestiae architecto excepturi eveniet rem eius, perspiciatis quibusdam beatae quod?</p>
+    </div>
+    <div id="glasses" class="item">
+        <h3><i><u>Vegetable</u></i>
+        </h3>
+        <p id="glassespara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam nostrum expedita provident doloremque laborum quaerat ratione aliquam libero suscipit molestiae architecto excepturi eveniet rem eius, perspiciatis quibusdam beatae quod?</p>
     </div>
    </div>
 </body>
