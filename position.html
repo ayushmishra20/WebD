@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .box {
+            border: 2px solid red;
+            margin: 2px;
+            height: 150px;
+            width: 150px;
+            display: inline-block;
+            /* position: absolute, sticky, fixed,relative, static(default) */
+        }
+        #box3{
+            /* position: absolute; relative to the nearest positioned ancestor, if there is no such ancestor, it will be relative to the initial containing block (usually the viewport) */
+            /* position: relative; relative to its normal position, it will be offset by the specified top, right, bottom, and left values */ 
+            position: relative;
+
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="box" id="box4">box4</div>
+</body>
+</html>
