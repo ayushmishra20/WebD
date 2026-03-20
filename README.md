@@ -2,27 +2,6 @@
 
 A structured collection of hands-on HTML, CSS, and Bootstrap projects built while learning modern frontend web development from scratch.
 
-## What's Inside
-
-| File | Description |
-|---|---|
-| `index.html` | Core HTML structure practice |
-| `alignment.html` | Web store layout — Flexbox & alignment |
-| `boxmodel.html` | CSS Box Model concepts |
-| `button-design.html` | Styled button designs |
-| `navbar.html` | Navbar with images |
-| `forms.html` | HTML Forms & input elements |
-| `portfolio.html` | My first personal portfolio page |
-| `position.html` | CSS Positioning techniques |
-| `display.html` | CSS Display properties |
-| `tables.html` | HTML Tables |
-| `selectors.html` | CSS Selectors practice |
-| `color.html` | Color theory in CSS |
-| `fonts.html` | Typography & font styling |
-| `formating.html` | Text formatting |
-| `learn.css` | Inline, internal & external CSS |
-| `images.html` | Working with images |
-
 ## Skills Demonstrated
 
 - Semantic HTML5 structure
