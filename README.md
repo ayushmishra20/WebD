@@ -36,4 +36,4 @@ A responsive navigation bar with image support.
 
 ---
 
-> *"Every expert was once a beginner."* — Learning one tag at a time!
+
