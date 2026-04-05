@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector and atributes</title>
+</head>
+<style>
+    .container{
+        color: coral;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    input[type="text"]{
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        width: 200px;
+        border: 2px solid gray;
+        background-color: azure;
+    }
+    input[type="email"]{
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        width: 200px;
+        border: 2px solid gray;
+        background-color: azure;
+
+    }
+    input[type="password"]{
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        width: 200px;
+        border: 2px solid gray;
+        background-color: azure;
+    }
+    input[type="submit"]{
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        width: 200px;
+        border: 2px solid gray;
+        background-color: coral;
+    }
+    a[target="_blank"]{
+        color:coral;
+        text-decoration: none;
+    }
+    a[target="_self"]{
+        color:coral;
+        text-decoration: none;
+    }
+    ul li:nth-child(2){
+        color: red;
+        text-decoration: none;
+    }
+    ul li:nth-child(3n+1){
+        color: green;
+        text-decoration: none;
+    }
+    ul li:nth-child(3n+3){
+        color: blue;
+        text-decoration: none;
+    }
+    ul li:nth-child(odd){
+        color: orange;
+        text-decoration: none;
+    }
+    ul li:nth-child(even){
+        color: purple;
+        text-decoration: none;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <h2><i><u>Contact Form</u></i></h2>
+        <h2><a href="http://google.com" target="_blank">Google</a></h2>
+        <h2><a href="http://github.com" target="_self">GitHub</a></h2>
+        <form action="" class="form-control">
+        <input type="text" placeholder="Enter Your Name">
+        <input type="email" placeholder="Enter Your Email">
+        <input type="password" placeholder="Enter Your Password">
+        <input type="submit" value="Submit">
+        </form>
+
+        <ul>
+            <li>this is first</li>
+            <li>this is second</li>
+            <li>this is third</li>
+        </ul>
+
+
+    </div>
+    
+</body>
+</html>

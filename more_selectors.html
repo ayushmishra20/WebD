@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+</head>
+<style>
+    div li p{
+        color: red;
+    }
+    div > ul > li > p{
+        color: green;
+    }
+    div > p{
+        color: blue;
+    }
+    div + p{
+        color: orange;
+    }
+</style>
+<body>
+    <div class="container">
+        <div><ul>
+            <li><p>this is inside the li</p></li>
+        </ul>
+    <p>this is after the div</p></div>
+    </div>
+    <p>this is outer paragraph</p>
+</body>
+</html>
