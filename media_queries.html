@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media queries</title>
+    <style>
+      .container{
+          padding: 5px;
+          margin: 10p2;
+          width: 100%;
+          height: 100vh;
+          border: 2px solid black;
+          border-radius: 10px;
+      }
+      /* .box{
+          font-size: 20px;
+          background-color: beige;
+          border: 2px solid bisque;
+          border-radius: 5px;
+      I
+      } */
+      /* #box-1{
+          margin: 5px;
+      }
+      #box-2{
+          margin: 5px;
+      }
+      #box-3{
+          margin: 5px;
+      }
+      #box-4{
+          margin: 5px; */
+      /* } */
+
+      @media (min-width: 500px) and (max-width: 800px){
+          .box-1{
+            display: block;
+              background-color: lightblue;
+          }
+      }
+      @media(min-width:800px) and (max-width:1200px){
+          .box-2{
+            display: block;
+              background-color: lightgreen;
+          }
+      }
+      @media(min-width:1200px){
+          .box-3{
+              display: block;
+              background-color: lightcoral;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">I am box</div>
+      <div class="box" id="box-2">I am phone</div>
+      <div class="box" id="box-3">I am tablet</div>
+      <div class="box" id="box-4">I am desktop</div>
+    </div>
+  </body>
+</html>
