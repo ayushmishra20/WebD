@@ -1,11 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>keyframes and animations</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .container {
+        background-color: greenyellow;
+      }
+      .box {
+        background-color: green;
+        border-radius: 25%;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        position: relative;
+        animation: move 5s linear infinite;
+        animation-iteration-count: infinite;
+        justify-content: center;
+        align-items: center;
+      }
+      @keyframes move {
+        form {
+          width: 200px;
+          height: 200px;
+        }
+        to {
+          width: 250px;
+          height: 250px;
+        }
+        0% {
+          left: 0;
+          top: 0;
+        }
+        25% {
+          left: 200px;
+          top: 0;
+        }
+        50% {
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          left: 0;
+          top: 200px;
+        }
+        100% {
+          left: 0;
+          top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">welcome Mishra jiii !!!</div>
+    </div>
+  </body>
 </html>
