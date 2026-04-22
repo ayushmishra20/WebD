@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transformation</title>
+</head>
+<style>
+    .container {
+        width: 300px;
+        height: 300px;
+        background-color: #41e7e9;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25%;
+    }
+    #inner-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(101, 162, 216);
+        border-radius: 75%;
+        transition: all 0.5s ease-in-out;
+    }
+    #inner-box:hover {
+        transform: rotate(360deg);
+        transform: scale(0.75);
+        transform: translateX(100px);
+        transform: translateY(100px);
+        transform: skew(20deg, 20deg);
+
+    }
+    </style>
+<body>
+    <div class="container">
+        <h2>Container</h2>
+        <div id="inner-box">
+            this is the inner box
+        </div>
+    </div>
+    
+</body>
+</html>
