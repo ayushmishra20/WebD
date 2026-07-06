@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Edit & /Remove </title>
+</head>
+<style>
+    *{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <h1 id="title">DOM Edit & Remove</h1>
+        <ul>
+            <li class="list-item">JavaScript</li>
+            
+    </div>
+</body>
+<script>
+    function addLang(lang){
+        const li = document.createElement('li')
+        li.innerHTML = lang
+        document.querySelector('.container ul').appendChild(li)
+    }
+    addLang("Python")
+    addLang("C++")
+
+    function addoptLang(lang){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.container ul').appendChild(li)
+    }
+    addoptLang("Java")
+    addoptLang("Ruby")
+
+
+
+    // EDITING
+    const secondLang = document.querySelector("nth-child(2)")
+    console.log(secondLang);
+    secondLang.innerHTML = "C#"
+
+    const newLi = document.createElement('li')
+    newLi.textContent = "GoLang"
+    secondLang.replaceWith(newLi);
+
+    // Edit
+    
+    const firstLang = document.querySelector("nth-child(1)")
+    firstLang.outerHTML = "<li>JavaScript</li>"
+
+    // Remove
+    const lastLang = document.querySelector("last-child")
+    lastLang.remove();
+
+</script>
+</html>
