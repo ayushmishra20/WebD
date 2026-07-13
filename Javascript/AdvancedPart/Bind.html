@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<style>
+    *{
+        background-color: black;
+        color: white;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+    }
+</style>
+<body>
+    <button id="btn">Click Me</button>
+
+    <h3>
+        The bind() method of Function instances creates a new function that, when called, calls this function with its this keyword set to the provided value, and a given sequence of arguments preceding any provided when the new function is called.
+    </h3>
+</body>
+<script>
+    class React {
+        constructor(){
+            this.library = 'React';
+            this.server = 'https://lovalhost:3000';
+
+            // Requirement
+            document
+                .querySelector('button')
+                .addEventListener('click', this.handleClick.bind(this));
+        }
+        handleClick(){
+            console.log('Button Clicked');
+            
+            console.log(this.server);
+        }
+    }
+    const app = new React();
+</script>
+</html>
